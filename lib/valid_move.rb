@@ -8,7 +8,7 @@ require 'pry'
 def valid_move?(board,index)
   binding.pry
   #if the position is already taken OR the user selection is not between 0 and 8, return nil or false
-    if index.between?(0,8) && position_taken? == false
+    if index.between?(0,8) && position_taken?(board,index) == false
         true
 #if the position is not already taken AND the user selection is between 0 and 8, return true.
     else 
