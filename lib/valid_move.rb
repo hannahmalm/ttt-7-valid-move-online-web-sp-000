@@ -6,6 +6,7 @@ require 'pry'
 # valid_move = false or nil, then move is not a valid_move
 
 def valid_move?(board,index)
+  binding.pry
   #if the position is already taken OR the user selection is not between 0 and 8, return nil or false
     if index.between?(0,8) && position_taken? == false
         true
