@@ -16,10 +16,10 @@
 
 def valid_move?
   #if the position is already taken OR the user selection is not between 0 and 8, return nil or false
-    if position_taken?(board, index) == true 
+    if position_taken? == true 
         false
 #if the position is not already taken AND the user selection is between 0 and 8, return true.
-    else position_taken?(board, index) == false 
+    else position_taken? == false 
         true
     end
 end
