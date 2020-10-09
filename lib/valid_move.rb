@@ -1,3 +1,4 @@
+require 'pry'
 # code your #valid_move? method here
 # a move is considered valid if the submtted position is present on the game board and not already filled with a position_taken
 #should accept a board and an index
