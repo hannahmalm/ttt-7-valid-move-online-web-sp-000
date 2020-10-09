@@ -14,26 +14,25 @@
 #     end
 # end
 
-def valid_move?
-  #if the position is already taken OR the user selection is not between 0 and 8, return nil or false
-    if position_taken? == true 
-        false
-#if the position is not already taken AND the user selection is between 0 and 8, return true.
-    else position_taken? == false 
-        true
-    end
-end
+# def valid_move?
+#   #if the position is already taken OR the user selection is not between 0 and 8, return nil or false
+#     if position_taken? == true 
+#         false
+# #if the position is not already taken AND the user selection is between 0 and 8, return true.
+#     else position_taken? == false 
+#         true
+#     end
+# end
 
 # #does user selection fall between 0 and 8
 # user_selection.gets.between(0,8)
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 
-
-# def position_taken?(board,index)
-#   if board[index] == " " || board[index] == "" || board[index] == nil
-#     false
-#   else board[index] == "X" || board[index] == "O"
-#     true
-#   end
-# end
+def position_taken?(board,index)
+  if board[index] == " " || board[index] == "" || board[index] == nil
+    false
+  else board[index] == "X" || board[index] == "O"
+    true
+  end
+end
