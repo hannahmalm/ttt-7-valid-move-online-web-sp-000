@@ -14,8 +14,6 @@ def valid_move?(board,index)
     end
 end
 
-# #does user selection fall between 0 and 8
-# user_selection.gets.between(0,8)
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 
