@@ -6,10 +6,10 @@
 
 def valid_move?(board,index)
   #if the position is already taken or the user selection is not between 0 and 8, return nil or false
-    if position_taken? == true || valid_move?(board,index) != gets.between(0,8)
+    if position_taken? == true || user_selection != gets.between(0,8)
         nil
 #if the position is not already taken and the user selection is between 0 and 8, return true.
-    else position_taken? == false && valid_move?(board[index]) == gets.between(0.8)
+    else position_taken? == false && user_selection == gets.between(0.8)
         true
     end
 end
